@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import './App.jsx'
+import './App.css'
 
 function AddButtom() {
   const [state, setState] = useState([]);
@@ -17,6 +17,12 @@ function AddButtom() {
     }
   };
 
+  const deleteText = (index) => {
+    const updatedText = [...state];
+    updatedText.splice(index, 1);
+    setState(updatedText);
+  };
+
   return (
     <div>
       <input
@@ -28,7 +34,8 @@ function AddButtom() {
       />
       <ul>
         {state.map((state, index) => (
-          <li key={index}>{state}</li>
+          <li key={index}>{state}
+          <button className='deleteButton' onClick={() => deleteText(index)}>X</button></li>
         ))}
       </ul>
 

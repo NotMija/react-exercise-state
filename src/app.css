@@ -1,0 +1,40 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 400px;
+    font-size: 20px;
+    background-color: gray;
+}
+
+button {
+    font-size: 20px;
+    padding: 12px 24px;
+    border-radius: 5px;
+}
+
+input {
+    margin-bottom: 10px;
+    padding: 12px;
+    font-size: 16px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 5px;
+}
+
+li {
+    font-size: 1.5rem;
+    margin-left: 5px;
+    padding: 3px;
+    color: white;
+}
+
+.deleteButton {
+    background: none;
+    border: none;
+    font-size: 12px;
+    cursor: pointer;
+    color: red;
+}
