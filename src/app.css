@@ -25,16 +25,21 @@ ul {
 }
 
 li {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid rgba(178, 178, 178, 0.518);
+    background-color: white;
     font-size: 1.5rem;
-    margin-left: 5px;
-    padding: 3px;
-    color: white;
+    color: black;
+    margin: 5px;
 }
 
 .deleteButton {
     background: none;
     border: none;
-    font-size: 12px;
+    font-size: 16px;
     cursor: pointer;
     color: red;
+    margin-left: 4px;
 }
